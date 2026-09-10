@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Autobus Rezerwowy MPK Kraków</title>
+<link rel="manifest" href="manifest.json">
+</head>
+<body>
+<h1>🚍 Autobus Rezerwowy MPK Kraków</h1>
+
+<p>Wersja PWA - prototyp</p>
+
+<label>Linia:</label>
+<input id="line" placeholder="np. 502">
+
+<label>Brygada:</label>
+<input id="brigade" placeholder="np. 12">
+
+<button onclick="search()">Szukaj</button>
+
+<pre id="result"></pre>
+
+<script>
+function search(){
+ const l=document.getElementById('line').value;
+ const b=document.getElementById('brigade').value;
+ document.getElementById('result').innerText =
+ `Linia ${l}, brygada ${b}\n\nModuł ZTP i GPS zostanie podłączony.`;
+}
+</script>
+
+</body>
+</html>
