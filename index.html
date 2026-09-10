@@ -1,34 +1,23 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pl">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Autobus Rezerwowy MPK Kraków</title>
 <link rel="manifest" href="manifest.json">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-<h1>🚍 Autobus Rezerwowy MPK Kraków</h1>
+<div class="app">
+<h1>🚍 Autobus Rezerwowy<br>MPK Kraków</h1>
 
-<p>Wersja PWA - prototyp</p>
+<input id="line" placeholder="Numer linii np. 502">
+<input id="brigade" placeholder="Numer brygady np. 12">
+<button onclick="find()">SZUKAJ</button>
 
-<label>Linia:</label>
-<input id="line" placeholder="np. 502">
+<div id="out" class="box">Gotowe do wyszukania.</div>
+</div>
 
-<label>Brygada:</label>
-<input id="brigade" placeholder="np. 12">
-
-<button onclick="search()">Szukaj</button>
-
-<pre id="result"></pre>
-
-<script>
-function search(){
- const l=document.getElementById('line').value;
- const b=document.getElementById('brigade').value;
- document.getElementById('result').innerText =
- `Linia ${l}, brygada ${b}\n\nModuł ZTP i GPS zostanie podłączony.`;
-}
-</script>
-
+<script src="app.js"></script>
 </body>
 </html>

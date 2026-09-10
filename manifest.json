@@ -1,6 +1,6 @@
 {
-"name":"Autobus Rezerwowy MPK Kraków",
-"short_name":"Rezerwa MPK",
-"display":"standalone",
-"start_url":"./"
+  "name": "Autobus Rezerwowy MPK Kraków",
+  "short_name": "MPK Rezerwa",
+  "display": "standalone",
+  "start_url": "./"
 }

@@ -1,14 +1,14 @@
-# Autobus Rezerwowy MPK Kraków
+# MPK-Rezerwa-v1
 
-Prosta wersja PWA bez folderów.
+Aplikacja PWA.
 
-Pliki:
-- index.html
-- manifest.json
-
-Przeznaczenie:
-- linia + brygada
-- dane ZTP Kraków
-- numer taborowy
-- mapa GPS
+Planowane podłączenie:
+- GTFS ZTP Kraków
+- GTFS-RT Vehicle Positions
+- Trip Updates
+- Service Alerts
+- mapa
 - tryb offline
+
+Źródła danych ZTP:
+https://gtfs.ztp.krakow.pl/
